@@ -5,9 +5,15 @@ for (let i=1; i < 11; i++){
     console.log(i);
 }
 
-
 // UPPGIFT 2: skriv ut talen 10 till 1 (nedräkning) med en while-loop.
 //            Skriv "Kaffe!" efter 1.
+let coffeCountdown: number = 10;
+
+while (coffeCountdown > 0) {
+    console.log("Tålamod! ", coffeCountdown);
+    coffeCountdown--;
+}
+console.log("Kaffe!");
 
 
 // UPPGIFT 3: gör samma sak som uppgift 1, men skriv bara ut jämna tal.
