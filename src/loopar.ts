@@ -33,6 +33,31 @@ for (let i = 2; i <= 10; i++){
 const prislista: number[] = [35, 32, 59, 45];
 const namnlista: string[] = ["Kardemummabulle", "Bryggkaffe", "Ostmacka", "Latte"];
 
+let summa = 0;
+let i = 0; 
+
+for (const pris of prislista) { 
+    console.log(`${namnlista[i]}: ${pris} kr`);
+    i++;
+    summa += pris;              
+}
+
+console.log(`Summa: ${summa} kr`)
+
+/* 
+for (const namn of namnlista) {
+    console.log(`${namn}: ${prislista[i]} kr`);
+    i++;
+    summa += prislista[i];
+}
+console.log(`Summa: ${summa} kr`)
+*/
+/* 
+for (let i = 0; i < namnlista.length; i++) {
+    console.log(`${namnlista[i]}: ${prislista[i]} kr`);
+}
+console.log(`Summa: ${summa} kr`)
+*/
 
 
 // TODO
