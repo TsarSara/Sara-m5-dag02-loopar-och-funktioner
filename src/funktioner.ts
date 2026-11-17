@@ -100,10 +100,9 @@ export function kvittorad(namn: string, antal: number, pris: number): string {
 
 // 10. Pilfunktioner. Skriv dem själv med const och =>.
 //     dubbla(4) ger 8. ärJämnt(4) ger true.
-export const dubbla = (n: number): number => {
-  
-    return n * 2;
-};
+export const dubbla = (n: number): number => n * 2;
+//Jag kan förkorta den och behöver inte använda {} och return i en pilfunktion
+
 export const ärJämnt = (n: number): boolean => {
   
   return n % 2 === 0; // Kollar så att det inte finns någon rest kvar för då är talet udda
