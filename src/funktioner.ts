@@ -15,6 +15,7 @@ export function formateraPris(pris: number): string {
 //    momsDel(112) ger 12.
 export function momsDel(pris: number): number {
     const moms: number = pris - pris / 1.12;
+    
     return Number(moms.toFixed(2)); //Number konverterar stringvärdet från toFixed till number
   
 }
@@ -22,6 +23,7 @@ export function momsDel(pris: number): number {
 // 3. Priset efter rabatt i procent. medRabatt(100, 10) ger 90.
 export function medRabatt(pris: number, procent: number): number {
     const nytt = pris * (1 - procent / 100);
+    
     return nytt;
    /*  const rabatt = pris * procent / 100; 
     return pris - rabatt;  */
@@ -57,6 +59,7 @@ export function snitt(tal: number[]): number {
     for (const nummer of tal) {
       summa += nummer;
     }
+    
     return summa / tal.length; 
 }
 
@@ -73,13 +76,19 @@ export function största(tal: number[]): number | undefined {
         största = nummer; 
       }
     }
-
+    
     return största;
 }
 
 // 8. Upprepa en text. upprepa("ab", 3) ger "ababab". Använd en loop.
 export function upprepa(text: string, antal: number): string {
-  // TODO
+    let upprepning = "";
+
+    for (let i = 0; i < antal; i++) {
+      upprepning += text; //Lägger till ab till upprepning 3 gånger
+    }
+    //console.log(upprepning);
+    return upprepning;
 }
 
 // 9. En kvittorad. kvittorad("Kaffe", 2, 32) ger "2 x Kaffe: 64 kr".
